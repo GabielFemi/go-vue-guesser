@@ -5,8 +5,20 @@ const guessComponent = {
         return {
             input: ''
         }
-    }
-}
+    },
+    methods: {
+        monitorEnterKey() {
+            this.$emit('add-note', {
+                note: this.input,
+            });
+            this.input = '';
+        },
+        addNote(event) {
+            this.notes.push(event.note);
+        }
+    },
+};
+
 new Vue({
     el: '#app',
     data: {
