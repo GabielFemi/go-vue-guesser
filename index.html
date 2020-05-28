@@ -15,7 +15,7 @@
         <div class="columns">
             <div class="column has-text-centered">
                 <strong>Notes</strong>
-                <div v-for = "note in notes" class="notes">
+                <div v-for="note in notes" class="notes">
                     {{ note }}
                 </div>
             </div>
@@ -23,12 +23,12 @@
                 <strong>Timestamp</strong>
             </div>
         </div>
-        <guess-component @add-note = "addNote" :placeholder = "placeholder"></guess-component>
+        <guess-component @add-note="addNote" :placeholder="placeholder"></guess-component>
     </div>
 
 </div>
-    <script src="/assets/js/vue.js"></script>
-    <script src="/assets/js/main.js"></script>
+<script src="/assets/js/vue.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>
