@@ -1,13 +1,15 @@
 package guesser
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
 )
 
 func render(w http.ResponseWriter, tmpl string,r *http.Request) {
-	t, err := template.ParseFiles(tmpl)
+	addOn := fmt.Sprintf("public/%s",tmpl)
+	t, err := template.ParseFiles(addOn)
 	if err != nil {
 		log.Fatalln(err)
 	}
