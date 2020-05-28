@@ -1,6 +1,6 @@
 const guessComponent = {
     template:
-    `<input name="guess" class="input is-small" type="text" placeholder="Guess a number">`
+    `<input name="guess" class="input is-small" type="text" placeholder="Guess a number" />`
 }
 new Vue({
     el: '#app',
