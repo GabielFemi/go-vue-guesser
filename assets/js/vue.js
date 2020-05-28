@@ -3931,7 +3931,7 @@
     vm._isDestroyed = false;
     vm._isBeingDestroyed = false;
   }
-m
+
   function lifecycleMixin (Vue) {
     Vue.prototype._update = function (vnode, hydrating) {
       var vm = this;
