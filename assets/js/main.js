@@ -1,7 +1,11 @@
 const guessComponent = {
     template:
-    `<input name="guess" class="input is-64x64" type="text" :placeholder = "placeholder"/>`,
-    props: ['placeholder']
+    `<input name="guess" class="input is-64x64" type="text" v-model = "input" @keyup.enter = "monitorEnterKey"/>`,
+    data () {
+        return {
+            input: ''
+        }
+    }
 }
 new Vue({
     el: '#app',
