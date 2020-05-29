@@ -13,7 +13,7 @@ func render(w http.ResponseWriter, tmpl string,r *http.Request) {
 		log.Fatalln(err)
 	}
 
-	err = t.Execute(w, nil)
+	err = t.Execute(w,  nil)
 	if err != nil {
 		log.Fatalln(err)
 	}
