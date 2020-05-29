@@ -22,7 +22,7 @@ const guessComponent = {
 new Vue({
     el: '#app',
     data: {
-        notes: [],
+        notes: ["Fish is an Element", "Fish is a fish"],
         guesses: [],
         placeholder: 'Guess what I\'m thinking'
     },

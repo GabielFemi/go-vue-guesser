@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="assets/css/bulma.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="/assets/js/vue.js"></script>
+    <script src="/assets/js/main.js"></script>
 </head>
 <body>
 <div class="container" id="app">
@@ -15,7 +17,7 @@
         <div class="columns">
             <div class="column has-text-centered">
                 <strong>Notes</strong>
-                <div v-for="note in notes" class="notes">
+                <div  class="notes">
                     {{ notes }}
                 </div>
             </div>
@@ -27,8 +29,7 @@
     </div>
 
 </div>
-<script src="/assets/js/vue.js"></script>
-<script src="/assets/js/main.js"></script>
+
 
 </body>
 </html>
